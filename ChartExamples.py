@@ -35,10 +35,10 @@ lblChart2 = tk.Label(text = "Нормальное распределение")
 lblChart2.place(x = 170, y = 172)
 
 # Добавление кнопки и метки для графика 3
-btnChart3 = tk.Button(window, text = "График 3", font = ('Helvetica', 10, 'bold'))
+btnChart3 = tk.Button(window, text = "График 3", font = ('Helvetica', 10, 'bold'), command = chart2.plot_chart2)
 btnChart3.place(x = 40, y = 215, width = 90, height = 30)
 
-lblChart3 = tk.Label(text = "")
+lblChart3 = tk.Label(text = "Нормальное распределение - 3 графика")
 lblChart3.place(x = 170, y = 222)
 
 # Добавление кнопки и метки для графика 4
@@ -77,7 +77,7 @@ lblChart8 = tk.Label(text = "Гистограмма")
 lblChart8.place(x = 170, y = 472)
 
 # Добавление кнопки закрытия программы
-btnClose = tk.Button(window, text = "Закрыть", font = ('Helvetica', 10, 'bold'))
+btnClose = tk.Button(window, text = "Закрыть", font = ('Helvetica', 10, 'bold'), command = do_close)
 btnClose.place(x = 330, y = 550, width = 90, height = 30)
 
 # Запуск цикла mainloop
