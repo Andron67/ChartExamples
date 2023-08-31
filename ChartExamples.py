@@ -5,6 +5,7 @@ import tkinter as tk
 # Импорт внешних файлов
 import chart1
 import chart2
+import chart3
 import chart8
 
 # Функция закрытия программы
@@ -42,10 +43,10 @@ lblChart3 = tk.Label(text = "Нормальное распределение - 3
 lblChart3.place(x = 170, y = 222)
 
 # Добавление кнопки и метки для графика 4
-btnChart4 = tk.Button(window, text = "График 4", font = ('Helvetica', 10, 'bold'))
+btnChart4 = tk.Button(window, text = "График 4", font = ('Helvetica', 10, 'bold'), command = chart3.plot_chart)
 btnChart4.place(x = 40, y = 265, width = 90, height = 30)
 
-lblChart4 = tk.Label(text = "График синуса matplotlib")
+lblChart4 = tk.Label(text = "Гистограмма Seaborn")
 lblChart4.place(x = 170, y = 272)
 
 # Добавление кнопки и метки для графика 5
