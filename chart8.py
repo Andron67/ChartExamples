@@ -24,4 +24,3 @@ def plot_chart():
 
     plt.show()
 
-
